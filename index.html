@@ -4,28 +4,82 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>replit</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='nofollow' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous'>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <h1 id="title">Fun Survey</h1>
-    <p id="description" This is a survey to measure how happy ar eyou with Microverse Experience...</p>
-    <form id="survey-form">
-      <label id="name">
-        <input placeholder="input your name here...">         </input>
-      </label>
-      <label id="email">
-        <input id="email" placeholder="enter your email..."></input>
-      </label>
-      <label id="number">
-        <input placeholder="enter your ID number..."></input>
-      </label>
-      <label id="dropdown">
-        <input>.......</input>
-      </label>
-      
-    </form>
-    Hello world
-   
+    <p id="description"> This is a survey to measure how happy are you with Microverse Experience...</p>
+  <form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="What's your name...">
+  </div>
+  <div class="form-group">
+    <label id="lastname-label" for="LastName">Last Name</label>
+    <input type="text" class="form-control" id="lastname" placeholder="What's your Last Name">
+  </div>
+  <div class="form-group">
+    <label id="number-label" for="number">Number</label>
+     <input placeholder="Enter a number between 1 and 5 inclusive" id="number" class="form-control" type="number" name="number" min="1" max="5">
+  </div>
+<div class="form-group">
+  <label id="dropdown-label" for="dropdown">Choose how satisfied you are with microverse:</label>
+    <select id="dropdown" class="form-control">
+      <option>Dissapointed</option>
+      <option>it's fine</option>
+      <option>regular</option>
+      <option>happy</option>
+      <option>very happy!</option>
+    </select>
+  </div>
+
+<div class="form-group">
+    <label for="exampleInputPassword1">Gender</label>
+    <div class="form-check">
+    <input name="male" class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled">
+  <label class="form-check-label" for="flexRadioDisabled">
+    Male
+  </label>
+</div>
+<div class="form-check">
+  <input name="female" class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled"> <label  class="form-check-label" for="flexRadioCheckedDisabled">
+  Female
+  </label>
+</div>
+  </div>
+
+  <div class="form-group">
+    <label id="email-label" for="exampleInputEmail1">Email address</label>
+    <input type="email" required class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  <div class="form-group">
+
+  <div class="form-group">
+    <label for="textarea">Do yo have some extra comments...</label>
+    <textarea id="mytextarea"></textarea>
+  <div class="form-group">
+
+  <label for="foodchoice">What's your food choice:</label>
+  <div class="form-check">
+    <input id="dropdown" value="flexible" type="checkbox" class="form-check-input">
+    <label class="form-check-label" for="exampleCheck1">I don't mind</label>
+  </div>
+  <div class="form-check">
+    <input id="dropdown1" value="allfood" type="checkbox" class="form-check-input">
+    <label class="form-check-label" for="exampleCheck1">I eat Everything</label>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" value="vegetarian" class="form-check-input" id="dropdown2">
+    <label class="form-check-label" for="exampleCheck1">Vegeterian</label>
+  </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
     <script src="script.js"></script>
   </body>
 </html>
